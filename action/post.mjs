@@ -15,7 +15,7 @@ console.log(`Turbo Cache Server will be stopped on pid: ${pid}`)
 
 process.kill(pid, 'SIGTERM')
 
-const maxProcessCheckAttempts = 20
+const maxProcessCheckAttempts = 1
 const sleepTimeInMills = 500
 let killCounter = 0
 while (isProcessRunning(pid)) {
